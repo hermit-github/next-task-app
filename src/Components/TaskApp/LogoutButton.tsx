@@ -2,14 +2,19 @@ import React from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { buttonVariants } from "../ui/button";
 import Link from 'next/link';
-import { Power } from 'lucide-react';
+import { LucideIcon, Power } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type Props = {
     isCollapsed:boolean;
 }
-
-const log = {
+type Log = {
+    title: string
+    label?: string
+    icon: LucideIcon
+    variant: "default" | "ghost"
+}
+const log:Log = {
     title: "Logout",
     label: "",
     icon: Power,
