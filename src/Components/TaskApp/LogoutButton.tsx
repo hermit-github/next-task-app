@@ -2,7 +2,7 @@ import React from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { buttonVariants } from "../ui/button";
 import Link from 'next/link';
-import { Archive } from 'lucide-react';
+import { Power } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 const log = {
     title: "Logout",
     label: "",
-    icon: Archive,
+    icon: Power,
     variant: "ghost",
   };
 

@@ -3,25 +3,13 @@ import React, { useState } from "react";
 import Nav from "../ui/Nav";
 import {
   AlertCircle,
-  Archive,
-  ArchiveX,
   ChevronRight,
-  File,
-  Inbox,
-  MessagesSquare,
-  PenBox,
-  Search,
-  Send,
-  ShoppingCart,
-  Trash2,
-  Users2,
+  CheckCircle,
+  KanbanSquare,
+  ClipboardList
 } from "lucide-react";
 import { TooltipProvider } from "../ui/tooltip";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
-import { Button, buttonVariants } from "../ui/button";
-
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 import LogoutButton from "./LogoutButton";
 
 type Props = {};
@@ -41,39 +29,27 @@ const SideBar = (props: Props) => {
           isCollapsed={isCollapsed}
           links={[
             {
-              title: "Inbox",
-              label: "128",
-              icon: Inbox,
+              title: "All Tasks",
+              label: "",
+              icon:ClipboardList,
               variant: "default",
             },
             {
-              title: "Drafts",
-              label: "9",
-              icon: File,
-              variant: "ghost",
-            },
-            {
-              title: "Sent",
+              title: "Important",
               label: "",
-              icon: Send,
+              icon: AlertCircle,
               variant: "ghost",
             },
             {
-              title: "Junk",
-              label: "23",
-              icon: ArchiveX,
-              variant: "ghost",
+                title: "Completed",
+                label: "",
+                icon: CheckCircle,
+                variant: "ghost",
             },
             {
-              title: "Trash",
+              title: "Board",
               label: "",
-              icon: Trash2,
-              variant: "ghost",
-            },
-            {
-              title: "Archive",
-              label: "",
-              icon: Archive,
+              icon: KanbanSquare,
               variant: "ghost",
             },
           ]}

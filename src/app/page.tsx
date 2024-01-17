@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      Home Page
+      All Tasks
     </main>
   )
 }
