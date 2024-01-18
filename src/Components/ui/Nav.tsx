@@ -1,8 +1,5 @@
 "use client"
-
 import Link from "next/link"
-import { LucideIcon } from "lucide-react"
-
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./button"
 import {
@@ -11,18 +8,9 @@ import {
   TooltipTrigger,
 } from "./tooltip"
 import { useState } from "react"
-import { NavigationTabs } from "@/lib/types"
+import { NavProps, NavigationTabs } from "@/lib/types"
 
-interface NavProps {
-  isCollapsed: boolean
-  links: {
-    title: NavigationTabs
-    label?: string
-    icon: LucideIcon
-    variant: "default" | "ghost"
-    href:string
-  }[]
-}
+
 
 export default function Nav({ links, isCollapsed }: NavProps) {
 

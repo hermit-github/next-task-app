@@ -1,7 +1,9 @@
+import MainContainer from "@/Components/TaskApp/MainContainer";
+
 export default function HomePage() {
   return (
-    <main>
-      All Tasks
-    </main>
+    <MainContainer title="All Tasks">
+
+    </MainContainer>
   )
 }

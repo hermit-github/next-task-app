@@ -1,7 +1,9 @@
+import MainContainer from "@/Components/TaskApp/MainContainer";
+
 export default function ImportantPage() {
     return (
-      <main>
-        Important Tasks
-      </main>
+      <MainContainer title="Important Tasks">
+        
+      </MainContainer>
     )
   }

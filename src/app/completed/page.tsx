@@ -1,7 +1,9 @@
+import MainContainer from "@/Components/TaskApp/MainContainer";
+
 export default function CompletedPage() {
     return (
-      <main>
-        Completed Tasks
-      </main>
+      <MainContainer title="Completed Tasks">
+        
+      </MainContainer>
     )
   }

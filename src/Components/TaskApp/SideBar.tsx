@@ -6,25 +6,24 @@ import {
   ChevronRight,
   CheckCircle,
   KanbanSquare,
-  ClipboardList
+  ClipboardList,
+  ChevronLeft
 } from "lucide-react";
 import { TooltipProvider } from "../ui/tooltip";
 import { Button } from "../ui/button";
 import LogoutButton from "./LogoutButton";
 
-type Props = {};
 
-
-
-const SideBar = (props: Props) => {
+const SideBar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
     <section className="relative h-screen py-5 bg-slate-950 flex flex-col justify-between items-center">
         <Button variant='secondary' className=" absolute right-[-20px] top-7 p-2 rounded-full font-thin">
-            <ChevronRight height={20} onClick={() => setIsCollapsed(prev => !prev)}/>
+            {isCollapsed ? <ChevronRight height={20} onClick={() => setIsCollapsed(prev => !prev)}/>:<ChevronLeft height={20} onClick={() => setIsCollapsed(prev => !prev)}/> }
         </Button>
-        <div className=""></div>
+        
       <TooltipProvider>
+        <div className=""></div>
         <Nav
           isCollapsed={isCollapsed}
           links={[

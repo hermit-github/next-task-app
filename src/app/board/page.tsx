@@ -1,7 +1,9 @@
+import MainContainer from "@/Components/TaskApp/MainContainer";
+
 export default function BoardPage() {
     return (
-      <main>
-        Task Board
-      </main>
+      <MainContainer title="Task Board">
+
+      </MainContainer>
     )
   }
