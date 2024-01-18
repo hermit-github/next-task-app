@@ -8,9 +8,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:5,
         priority:0
     },
     {
@@ -18,9 +19,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -28,9 +30,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -38,9 +41,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -48,9 +52,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -58,9 +63,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -68,9 +74,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -78,9 +85,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -88,9 +96,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -98,9 +107,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
     {
@@ -108,9 +118,10 @@ export const tasks:Task[] = [
         title:"Wash Cloths",
         status:"Not Started",
         desc:"Wash all the winter cloths with easy detergent",
-        createdAt:Date.now(),
-        completedAt:Date.now(),
-        updatedAt:Date.now(),
+        createdAt:'Jan 14,2024',
+        completedAt:'Jan 14,2024',
+        updatedAt:'Jan 14,2024',
+        aging:1,
         priority:0
     },
 ];

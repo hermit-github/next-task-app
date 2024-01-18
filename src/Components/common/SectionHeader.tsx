@@ -6,7 +6,7 @@ type Props = {
 
 const SectionHeader = ({text}: Props) => {
   return (
-    <p className='font-bold text-2xl'>{text}</p>
+    <p className='font-bold text-2xl block mb-7'>{text}</p>
   )
 }
 

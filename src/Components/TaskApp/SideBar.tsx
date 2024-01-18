@@ -17,7 +17,7 @@ import LogoutButton from "./LogoutButton";
 const SideBar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   return (
-    <section className="relative h-screen py-5 bg-slate-950 flex flex-col justify-between items-center">
+    <section className="fixed h-screen py-5 bg-slate-950 flex flex-col justify-between items-center">
         <Button variant='secondary' className=" absolute right-[-20px] top-7 p-2 rounded-full font-thin">
             {isCollapsed ? <ChevronRight height={20} onClick={() => setIsCollapsed(prev => !prev)}/>:<ChevronLeft height={20} onClick={() => setIsCollapsed(prev => !prev)}/> }
         </Button>

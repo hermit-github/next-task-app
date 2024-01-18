@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(jetbrains.className,'min-h-screen w-full text-white/70 flex')}>
+        
         <SideBar/>
-
-        <div className="px-6 py-3 w-full">
+        <div className="ml-11 px-6 py-3 w-full">
           {children}
         </div>
         
