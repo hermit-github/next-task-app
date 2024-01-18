@@ -33,24 +33,28 @@ const SideBar = (props: Props) => {
               label: "",
               icon:ClipboardList,
               variant: "default",
+              href:"/"
             },
             {
               title: "Important",
               label: "",
               icon: AlertCircle,
               variant: "ghost",
+              href:"/important"
             },
             {
                 title: "Completed",
                 label: "",
                 icon: CheckCircle,
                 variant: "ghost",
+                href:"/completed"
             },
             {
               title: "Board",
               label: "",
               icon: KanbanSquare,
               variant: "ghost",
+              href:"/board"
             },
           ]}
         />
