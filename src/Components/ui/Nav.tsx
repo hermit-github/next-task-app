@@ -10,11 +10,13 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "./tooltip"
+import { useState } from "react"
+import { NavigationTabs } from "@/lib/types"
 
 interface NavProps {
   isCollapsed: boolean
   links: {
-    title: string
+    title: NavigationTabs
     label?: string
     icon: LucideIcon
     variant: "default" | "ghost"
@@ -23,6 +25,9 @@ interface NavProps {
 }
 
 export default function Nav({ links, isCollapsed }: NavProps) {
+
+  const [activeTab,setActiveTab] = useState<NavigationTabs>("All Tasks");
+
   return (
     <div
       data-collapsed={isCollapsed}
@@ -35,8 +40,9 @@ export default function Nav({ links, isCollapsed }: NavProps) {
               <TooltipTrigger asChild>
                 <Link
                   href={link.href}
+                  onClick={() => setActiveTab(link.title)}
                   className={cn(
-                    buttonVariants({ variant: link.variant, size: "icon" }),
+                    buttonVariants({ variant: link.title === activeTab ? "default" : "ghost", size: "icon" }),
                     "h-9 w-9",
                     link.variant === "default" &&
                       "dark:bg-muted dark:text-muted-foreground dark:hover:bg-muted dark:hover:text-white"
@@ -59,8 +65,9 @@ export default function Nav({ links, isCollapsed }: NavProps) {
             <Link
               key={index}
               href={link.href}
+              onClick={() => setActiveTab(link.title)}
               className={cn(
-                buttonVariants({ variant: link.variant, size: "sm" }),
+                buttonVariants({ variant: link.title === activeTab ? "default" : "ghost", size: "sm" }),
                 link.variant === "default" &&
                   "dark:bg-muted dark:text-white dark:hover:bg-muted dark:hover:text-white",
                 "justify-start"
