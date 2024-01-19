@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import SideBar from '@/Components/TaskApp/SideBar'
 
 
 
@@ -20,13 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(jetbrains.className,'min-h-screen w-full text-white/70 flex')}>
-        
-        <SideBar/>
-        <div className="ml-11 px-6 py-3 w-full">
-          {children}
-        </div>
-        
+      <body className={`${jetbrains.className}`}>
+        {children}
       </body>
     </html>
   )
