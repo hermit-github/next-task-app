@@ -32,28 +32,28 @@ const SideBar = () => {
               label: "",
               icon:ClipboardList,
               variant: "default",
-              href:"/"
+              href:"/task/"
             },
             {
               title: "Important",
               label: "",
               icon: AlertCircle,
               variant: "ghost",
-              href:"/important"
+              href:"/task/important"
             },
             {
                 title: "Completed",
                 label: "",
                 icon: CheckCircle,
                 variant: "ghost",
-                href:"/completed"
+                href:"/task/completed"
             },
             {
               title: "Board",
               label: "",
               icon: KanbanSquare,
               variant: "ghost",
-              href:"/board"
+              href:"/task/board"
             },
           ]}
         />
