@@ -4,7 +4,7 @@ import {
     CardContent,
     CardFooter,
     CardHeader
-  } from "@/components/ui/card";
+  } from "@/Components/ui/card";
 import { Header } from "./Header";
 import { BackButton } from "./BackButton";
 import { Social } from "./Social";
